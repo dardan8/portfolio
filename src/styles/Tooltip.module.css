@@ -1,0 +1,27 @@
+.tooltip_background {
+  width: 70%;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 1.5rem;
+  border: 1px solid #b18ede2f;
+  background-color: #b18ede35;
+  color: var(--main-color);
+
+  border-radius: 0.4rem;
+  position: relative;
+  cursor: default;
+}
+
+.tooltip_text::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -6px;
+  margin-bottom: 1px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #b18ede5b transparent;
+}

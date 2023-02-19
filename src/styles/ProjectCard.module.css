@@ -1,0 +1,86 @@
+.card {
+  display: flex;
+  flex-direction: column;
+
+  width: 30%;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 0.7rem;
+  box-shadow: rgb(0 0 0 / 4%) 0px 4px 5px 0px, rgb(0 0 0 / 2%) 0px 3px 14px 3px,
+    rgb(0 0 0 / 1%) 0px 8px 10px 1px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 25rem;
+    background-color: #ffffffcc;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-height: 25rem;
+    background-color: #ffffffcc;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.7rem;
+  }
+}
+
+.card_image {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card_image img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  background-position: 0;
+
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card_title {
+  font-size: 20px;
+}
+
+.card_bodytext {
+  font-size: 15px;
+}
+
+.card_buttons {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+}
+
+.card_tags {
+  color: var(--main-color);
+  border: 1px solid #b18ede2f;
+  background-color: #b18ede35;
+  padding: 0.2rem;
+  border-radius: 0.4rem;
+  font-size: 11px;
+}
