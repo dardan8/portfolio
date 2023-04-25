@@ -1,4 +1,14 @@
 export const projects = [
+    {
+    project_id: 6,
+    project_title: "Pomodoro App",
+    project_description:
+      "Pomodoro app to boost your productivity. Designed and developed by me",
+    project_url: "https://pomodoro-dardan8.vercel.app/",
+    project_source_code: "https://github.com/dardan8/pomodoro",
+    project_image: "/images/projects/pomodoro.png",
+    project_technologies: ["ReactJS", "NextJS", "SCSS"],
+  },
   {
     project_id: 4,
     project_title: "Cooking Blog",
